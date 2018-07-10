@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "258947507047",
+    "firebase_url": "https://ment2linknew-af91c.firebaseio.com",
+    "project_id": "ment2linknew-af91c",
+    "storage_bucket": "ment2linknew-af91c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258947507047:android:864d1f678932c3a2",
+        "android_client_info": {
+          "package_name": "comment.github.academy_intern.ment2link"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258947507047-5p9hc822h0s84q55no34cv23t9updj2d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "comment.github.academy_intern.ment2link",
+            "certificate_hash": "e73a2361daba6932fa81a46d804fc105c0d55d7a"
+          }
+        },
+        {
+          "client_id": "258947507047-ag04jbjs7r1fe7pfif6qmu8bs916njrq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEwfjw2xu8fND91FmHyNtRpXh1lD_jNk8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258947507047-ag04jbjs7r1fe7pfif6qmu8bs916njrq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258947507047:android:0b5d65230dbf448c",
+        "android_client_info": {
+          "package_name": "com.github.academy_intern.ment2link"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "258947507047-rqjq1u0ip9hg7f857sf5bq07tqvbftnp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.github.academy_intern.ment2link",
+            "certificate_hash": "e73a2361daba6932fa81a46d804fc105c0d55d7a"
+          }
+        },
+        {
+          "client_id": "258947507047-ag04jbjs7r1fe7pfif6qmu8bs916njrq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEwfjw2xu8fND91FmHyNtRpXh1lD_jNk8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258947507047-ag04jbjs7r1fe7pfif6qmu8bs916njrq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

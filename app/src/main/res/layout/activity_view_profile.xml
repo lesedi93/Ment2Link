@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="coment.github.academy_intern.ment2link.activities.ViewProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="57dp"
+            android:layout_marginEnd="13dp"
+            android:elevation="15dp"
+            android:src="@drawable/ic_photo_camera_black_24dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/summary_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_pic"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:elevation="70dp"
+            android:src="@drawable/unknown" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="Tony Vintachi"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="tony@thedigitalacademy.co.za"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="380dp"
+        android:orientation="vertical"
+
+        android:scrollbars="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="false"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@android:color/black">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Username"
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="false"
+                android:inputType="text"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="false"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@android:color/black">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Surname"
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="false"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="false"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@android:color/black">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Bio"
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="false"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/black"
+                android:textSize="10sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="false"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@android:color/black">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Field"
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="false"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:focusableInTouchMode="true"
+            android:focusedByDefault="false"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:textColorHint="@android:color/black">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:hint="Location"
+                android:focusableInTouchMode="true"
+                android:focusedByDefault="false"
+                android:inputType="textMultiLine"
+                android:textColor="@android:color/black"
+                android:textSize="16dp" />
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="24dp"
+        app:theme="@style/TransparentBar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="Profile"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="comment.github.academy_intern.ment2link">
+
+    <!-- Required by Calendar Provider -->
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <!-- Required for weather sync -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ment2Link"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name="coment.github.academy_intern.ment2link.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="coment.github.academy_intern.ment2link.EditActivity"
+            android:windowSoftInputMode="adjustResize" />
+
+        <receiver android:name="coment.github.academy_intern.ment2link.weather.WeatherSyncAlarmReceiver" />
+
+        <service android:name="coment.github.academy_intern.ment2link.weather.WeatherSyncService" />
+
+        <activity android:name="coment.github.academy_intern.ment2link.MainActivity" />
+        <activity
+            android:name="coment.github.academy_intern.ment2link.mentordrawer.MentorNavigationDrawer"
+            android:label="@string/title_activity_mentor_navigation_drawer"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="coment.github.academy_intern.ment2link.activities.SearchMentorActivity"
+            android:label="Fuck"
+            android:parentActivityName="coment.github.academy_intern.ment2link.menteedrawer.MenteeNavigationDrawer" />
+        <activity android:name="coment.github.academy_intern.ment2link.activities.ViewProfileActivity" />
+        <activity android:name="coment.github.academy_intern.ment2link.menteedrawer.MenteeTabMenu" />
+        <activity android:name="coment.github.academy_intern.ment2link.activities.RecommendedMentors" />
+        <activity android:name="coment.github.academy_intern.ment2link.ShowBookingActivity" />
+        <activity android:name="coment.github.academy_intern.ment2link.activities.BlockedMentee" />
+        <activity android:name="coment.github.academy_intern.ment2link.widget.EvenBookActivity" />
+        <activity android:name="coment.github.academy_intern.ment2link.SignOut" />
+
+        <service android:name="coment.github.academy_intern.ment2link.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name="coment.github.academy_intern.ment2link.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name="coment.github.academy_intern.ment2link.ShowActivity"></activity>
+    </application>
+
+</manifest>

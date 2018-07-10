@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue50">#E3F2FD</color>
+    <color name="cyan50">#E0F7FA</color>
+    <color name="green50">#E8F5E9</color>
+    <color name="yellow50">#FFFDE7</color>
+    <color name="red50">#FFEBEE</color>
+    <color name="blue500">#90b29600</color>
+    <color name="blue700">#90b29600</color>
+    <color name="greenA700">#80b29600</color>
+    <color name="colorDivider">#1F000000</color>
+
+
+    <color name="color_home">#FFFF</color>
+    <color name="color_search">#FFFF</color>
+    <color name="color_notifications">#FFFF</color>
+    <color name="color_notificationss">#90FFFFFF</color>
+
+    <color name="color_notificationsss">#1F000000</color>
+
+    <color name="colorLoader">#b29600</color>
+    <color name="colorPrimary">#b29600</color>
+    <color name="colorPrimaryDark">#95222222</color>
+    <color name="colorPrimaryDarks">#90b29600</color>
+    <color name="colorAccent">#90333333</color>
+    <color name="contact_name">#90333333</color>
+    <color name="colorText">#ffff</color>
+    <color name="contact_number">#8c8c8c</color>
+    <color name="cardPrimary"> #80262323</color>
+    <color name="year">#999999</color>
+    <color name="title">#222222</color>
+
+
+</resources>

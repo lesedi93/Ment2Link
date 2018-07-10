@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context="coment.github.academy_intern.ment2link.activities.SearchMentorActivity">
+
+    <include layout="@layout/content_main"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:minHeight="40dp"
+        android:padding ="5dp"
+        app:subtitleTextAppearance="@android:color/white"
+        app:titleTextColor="@android:color/white"
+        android:background="#4F000000">
+    </android.support.v7.widget.Toolbar>
+
+</RelativeLayout>

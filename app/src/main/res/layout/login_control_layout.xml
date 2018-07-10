@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_background"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="190dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="110dp"
+        android:maxWidth="260dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/newlogowhite" />
+
+
+    <TextView
+        android:id="@+id/tt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconsz"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="65dp"
+        android:text="Just A Moment"
+        android:textColor="@color/colorPrimary"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/kk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tt"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="13dp"
+        android:text="Setting up Enviroment"
+        android:textColor="@color/colorPrimary"
+        android:textSize="13sp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/icons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="36dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="105dp"
+            android:layout_marginRight="40dp"
+            android:src="@drawable/rise_c" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_above="@+id/pp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="50dp"
+            android:src="@drawable/rise_b" />
+
+        <ImageView
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_toEndOf="@+id/kk"
+            android:src="@drawable/rise_a" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/iconsz"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/icons"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/pp1"
+            android:layout_below="@id/icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=" Find"
+            android:layout_marginLeft="111dp"
+            android:layout_marginRight="56dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/pp2"
+            android:layout_below="@id/icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=" Link"
+            android:layout_marginLeft="11dp"
+            android:layout_marginRight="60dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/pp3"
+            android:layout_below="@id/icons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text=" Rise"
+            android:layout_marginLeft="1dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <ee.subscribe.gooeyloader.GooeyLoaderView
+        android:id="@+id/appLoader"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        app:glv_color="@color/colorPrimary" />
+
+</RelativeLayout>
